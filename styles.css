@@ -1,0 +1,59 @@
+main {
+  background-color: #EAF6F6;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 170px 200px;
+  grid-template-rows: repeat(5, 40px);
+  gap: 20px;
+  background-color: #66BFBF;
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 30px -16px black;
+}
+form #submit {
+  grid-column: -2/-1;
+  grid-row: -2/-1;
+}
+form #reset {
+  grid-column: -3/-2;
+  grid-row: -2/-1;
+}
+form #password {
+  grid-column: -2/-1;
+  grid-row: 3/4;
+}
+form label {
+  text-align: right;
+  font-size: 20px;
+}
+form input {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  color: #66BFBF;
+}
+form button {
+  font-size: 20px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background-color: #EAF6F6;
+  color: #66BFBF;
+  cursor: pointer;
+}
+form :invalid {
+  color: #FF0063;
+}
+form .error {
+  font-size: 20px;
+  color: #FF0063;
+}/*# sourceMappingURL=styles.css.map */
